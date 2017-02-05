@@ -36,10 +36,11 @@ public class UserController {
 	
 	
 	@RequestMapping(value="/addUser", method= RequestMethod.POST)
-	public void addUser(@RequestBody User user){
+	public String addUser(@RequestBody User user){
 		
 	
 		userService.addUser(user);
+		return "ddfdfdf";
 		
 	}
 	
