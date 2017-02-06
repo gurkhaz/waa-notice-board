@@ -20,14 +20,14 @@ public class NoticeController {
 	
 	
 	@RequestMapping(value="/Notices")
-	public List<Notice> getAllStudents(){
+	public List<Notice> getAllNotices(){
 		
 		return noticeService.getAllNotices();
 	}
 	
 	
 	@RequestMapping(value="/addNotice", method= RequestMethod.POST)
-	public void addStudent(@RequestBody Notice notice){
+	public void addNotice(@RequestBody Notice notice){
 
 		noticeService.addNotice(notice);
 		
