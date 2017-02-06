@@ -2,8 +2,10 @@ package mum.waa.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "`user`")
 public class User {
 
 	@Id
@@ -19,16 +21,17 @@ public class User {
 
 	}
 
-	public User(String id, String firstName, String lastName, String address, String username, String password, String role) {
-		
+	public User(String id, String firstName, String lastName, String address, String username, String password,
+			String role) {
+
 		this.id = id;
 		this.firstName = firstName;
-		this.lastName= lastName;
+		this.lastName = lastName;
 		this.address = address;
-		this.username= username;
+		this.username = username;
 		this.password = password;
-		this.role= role;
-		
+		this.role = role;
+
 	}
 
 	public String getId() {
