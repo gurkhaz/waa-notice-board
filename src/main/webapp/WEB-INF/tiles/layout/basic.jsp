@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>dlkjfdlkjfdlk</h2>
+<h2>Basic page</h2>
 </body>
 </html>
