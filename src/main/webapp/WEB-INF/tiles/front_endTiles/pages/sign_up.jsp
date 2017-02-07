@@ -1,39 +1,46 @@
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
  <section class="banner">
     	<div class="container">           
             
             <div class="top_form  pull-left">
                 <h1>Sign Up</h1>
-                <form method="" action="">
+               <form:form modelAttribute="student" method="post" action="signup">
                     <div class="small_input left">
-                        <input type="text" placeholder="First name" required>
+                       
+                        <form:input path="firstName"  type="text" placeholder="First name" />
                     </div>
                     <div class="small_input right">
-                        <input type="text" placeholder="Last name" required>
+                       
+                        <form:input path="lastName"  type="text" placeholder="Last name" />
                     </div>
                     <br class="clear">
-                    <input type="email" placeholder="Email" required>
-                    <input type="text" placeholder="Username" required>
-                    <input type="password" placeholder="Password" required>
-                    <input type="text" placeholder="address" required>
+                  
+                      <form:input path="email"  type="email" placeholder="Email" />
+                      <form:input path="username"  type="text" placeholder="Username" />
+                      <form:input path="password"  type="password" placeholder="Password" />
+                   <form:input path="address"  type="text" placeholder="Address" />
+                   
+                    
                      <div class="small_input left">
-                    <select>
-                      <option value="volvo">Faculty</option>
-                      <option value="saab">Saab</option>
-                      <option value="mercedes">Mercedes</option>
-                      <option value="audi">Audi</option>
+                    <select path="faculty">
+                      <option value="">Faculty</option>
+                      <option value="Compro">Compro</option>
+                      <option value="MBA">MBA</option>
+                      
                     </select>
                      </div>
                     <div class="small_input right">
-                    <select>
-                      <option value="volvo">Entry</option>
-                      <option value="saab">Saab</option>
-                      <option value="mercedes">Mercedes</option>
-                      <option value="audi">Audi</option>
+                    <select path="entry">
+                      <option value="">Entry</option>
+                      <option value="January">January</option>
+                      <option value="April">April</option>
+                      <option value="August">August</option>
+                      <option value="October">October</option>
                     </select>
                     </div> <br class="clear">
                     <input type="submit" value="Sign Up">
                     
-                </form>
+                </form:form>
     		</div>
             
             <div class="why_chose  pull-right">

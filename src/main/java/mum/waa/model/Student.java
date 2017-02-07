@@ -1,13 +1,17 @@
 package mum.waa.model;
 
+import javax.annotation.Generated;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Student {
 
 	@Id
-	private String id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
 	private String firstName;
 	private String lastName;
 	private String address;
@@ -21,7 +25,7 @@ public class Student {
 
 	}
 
-	public Student(String id, String firstName, String lastName, String address, String faculty, String username, String password, String email, String entry) {
+	public Student(int id, String firstName, String lastName, String address, String faculty, String username, String password, String email, String entry) {
 
 		
 		this.id = id;
@@ -36,11 +40,11 @@ public class Student {
 		
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
