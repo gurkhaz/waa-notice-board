@@ -20,4 +20,23 @@
 		<put-attribute name="content" value="/WEB-INF/tiles/front_endTiles/pages/sign_up.jsp"></put-attribute>
 		
 	</definition>
+	
+	
+	
+	<!-- login page  -->
+	
+	<!-- Templates -->
+	<definition name="logintemplate" template="/WEB-INF/tiles/front_endTiles/layout/index_template.jsp">
+		<put-attribute name="header" value="/WEB-INF/tiles/front_endTiles/layout/header_login.jsp"></put-attribute>
+		
+		<put-attribute name="footer" value="/WEB-INF/tiles/front_endTiles/layout/footer.jsp"></put-attribute>
+	</definition>
+	
+	<!-- Pages -->	
+	
+	<definition name="login" extends="logintemplate">
+		<put-attribute name="content" value="/WEB-INF/tiles/front_endTiles/pages/login.jsp"></put-attribute>
+		
+	</definition>
+	
 </tiles-definitions>
