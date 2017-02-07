@@ -48,6 +48,13 @@
 	<!-- jQuery -->
 	<script src="/resources/front_end/js/jquery.js"></script>
 	<script src="/resources/front_end/js/bootstrap.min.js"></script>
+	
+	  <script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('#example').DataTable();
+			} );
+		</script>
 
 </body>
 </html>

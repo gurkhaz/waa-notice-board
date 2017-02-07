@@ -39,4 +39,21 @@
 		
 	</definition>
 	
+	
+	<!--   notice page -->
+	
+	<!-- Templates -->
+	<definition name="noticetemplate" template="/WEB-INF/tiles/front_endTiles/layout/index_template.jsp">
+		<put-attribute name="header" value="/WEB-INF/tiles/front_endTiles/layout/header_notice.jsp"></put-attribute>
+		
+		<put-attribute name="footer" value="/WEB-INF/tiles/front_endTiles/layout/footer_notice.jsp"></put-attribute>
+	</definition>
+	
+	<!-- Pages -->	
+	
+	<definition name="notice" extends="noticetemplate">
+		<put-attribute name="content" value="/WEB-INF/tiles/front_endTiles/pages/notice.jsp"></put-attribute>
+		
+	</definition>
+	
 </tiles-definitions>
