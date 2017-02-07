@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import mum.waa.model.User;
 import mum.waa.service.UserService;
 
-@RestController
+@RestController()
 public class UserController {
 	
 	
