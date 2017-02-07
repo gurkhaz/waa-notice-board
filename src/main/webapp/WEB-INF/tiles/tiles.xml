@@ -5,11 +5,19 @@
 
 	<!-- Templates -->
 	
-	<definition name="layout.basic" template="/WEB-INF/tiles/layout/basic.jsp">
+	
+	
+	<!-- Templates -->
+	<definition name="indextemplate" template="/WEB-INF/tiles/front_endTiles/layout/index_template.jsp">
+		<put-attribute name="header" value="/WEB-INF/tiles/front_endTiles/layout/header.jsp"></put-attribute>
+		
+		<put-attribute name="footer" value="/WEB-INF/tiles/front_endTiles/layout/footer.jsp"></put-attribute>
 	</definition>
 	
 	<!-- Pages -->	
 	
-	<definition name="site.homepage" extends="layout.basic">
+	<definition name="signUp" extends="indextemplate">
+		<put-attribute name="content" value="/WEB-INF/tiles/front_endTiles/pages/sign_up.jsp"></put-attribute>
+		
 	</definition>
 </tiles-definitions>

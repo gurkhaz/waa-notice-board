@@ -23,4 +23,7 @@ public class TilesConfigurator {
         resolver.setViewClass(TilesView.class);
         return resolver;
     }
+	
+	
+	
 }

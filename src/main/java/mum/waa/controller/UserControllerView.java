@@ -18,5 +18,7 @@ public class UserControllerView {
 	public String addUser(){
 		return  "adduserform";
 	}
-
+	
+	
+	
 }
