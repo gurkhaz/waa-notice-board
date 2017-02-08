@@ -6,7 +6,7 @@
 	<!-- Templates -->
 	<definition name="adminmaster" template="/WEB-INF/tiles/adminTiles/layout/admin_base_template.jsp">
 		<put-attribute name="header" value="/WEB-INF/tiles/adminTiles/layout/admin_header.jsp" ></put-attribute>
-		
+		<put-attribute name="title" value="Notice Board Admin"></put-attribute>
 		<put-attribute name="nav_left" value="/WEB-INF/tiles/adminTiles/layout/admin_left_nav.jsp"></put-attribute>
 		<put-attribute name="footer" value="/WEB-INF/tiles/adminTiles/layout/admin_footer.jsp"></put-attribute>
 	</definition>
