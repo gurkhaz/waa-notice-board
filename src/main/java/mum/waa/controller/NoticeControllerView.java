@@ -57,6 +57,23 @@ public class NoticeControllerView {
 		
 	}
 	
-
+	
+	@RequestMapping(value="/notice/edit/{id}", method=RequestMethod.GET)
+	public String getNotificationEdit(@PathVariable int id,Model model){
+		
+		
+		model.addAttribute("notice", noticeService.getNotice(id));
+		return "editNotification";
+		
+	}
+	
+	@RequestMapping(value="/notice/edit/{id}", method=RequestMethod.POST)
+	public String editNotification(@ModelAttribute("notice")  Notice notice, @PathVariable int id,Model model){
+		
+		
+		
+		return "editNotification";
+		
+	}
 
 }

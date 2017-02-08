@@ -91,7 +91,7 @@ table, th, td {
 					            		<%-- <button value="${notice.id}" onclick="deleteProduct(this)" class="btn btn-danger btn-xs">Delete</button> --%>
 					            		<a class="btn btn-warning btn-xs" href="deleteNotice/${notice.id}">Delete</a>
 					            		|
-					            		<a class="btn btn-warning btn-xs" href="notificat/edit/${notice.id}">Edit</a>
+					            		<a class="btn btn-warning btn-xs" href="notice/edit/${notice.id}">Edit</a>
 					            	</td>
 					            </tr>
 					     </c:forEach> 
