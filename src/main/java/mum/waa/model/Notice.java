@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 public class Notice {
@@ -15,7 +16,9 @@ public class Notice {
 	private int id;
 	private String title;
 	private String description;
+	@DateTimeFormat(pattern = "MM-dd-yyyy")
 	private Date eventDate; 
+	@DateTimeFormat(pattern = "MM-dd-yyyy")
 	private Date addDate;
 	private String venue;
 	private String faculty;

@@ -25,4 +25,12 @@
 		<put-attribute name="content" value="/WEB-INF/tiles/adminTiles/pages/addNotification.jsp"></put-attribute>
 	</definition>
 	
+	
+	
+	<!-- list notification -->
+	
+	<definition name="listNotification" extends="adminmaster">
+		<put-attribute name="content" value="/WEB-INF/tiles/adminTiles/pages/listNotification.jsp"></put-attribute>
+	</definition>
+	
 </tiles-definitions>

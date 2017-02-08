@@ -38,12 +38,12 @@
 							</div>
 							<div class="form-group">
 								<label for="exampleInputEmail1">Add date</label>
-								<form:input path="addDate" type="text" datcssClass="form-control" />
+								<form:input path="addDate" type="text" cssClass="form-control"  />
 							</div>
 							
 							<div class="form-group">
 								<label for="exampleInputEmail1">Venue</label>
-								<form:input path="venue" type="text" datcssClass="form-control" />
+								<form:input path="venue" type="text" cssClass="form-control"  />
 							</div>
 						
 						 <div class="form-group">
@@ -54,6 +54,11 @@
 								<form:option value="MBA" label="MBA" />
 							</form:select>
 							</div> 
+							
+							<div class="form-group">
+								<label for="exampleInputEmail1">Description</label>
+								<form:textarea path="description" rows="5" cols="30" cssClass="form-control"  />
+							</div>
 							<div class="form-group">
 								<input type="submit" value="Submit"
 									class="btn btn-success btn-sm" />

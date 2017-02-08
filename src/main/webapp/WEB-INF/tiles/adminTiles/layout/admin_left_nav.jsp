@@ -48,7 +48,7 @@
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="addNotification"><i class="fa fa-circle-o text-aqua"></i> Add Notification</a></li>
-            <li><a href="productlist"><i class="fa fa-circle-o text-aqua"></i> List Notification</a></li>
+            <li><a href="listNotification"><i class="fa fa-circle-o text-aqua"></i> List Notification</a></li>
           </ul>
           
         </li>
