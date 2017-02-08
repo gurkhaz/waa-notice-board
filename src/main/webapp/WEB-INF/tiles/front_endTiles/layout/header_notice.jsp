@@ -37,8 +37,8 @@
                     </div>
 				<input type="submit" value="search" class="search_button">
                 <ul class="nav navbar-nav navbar-right">
-                	 <li><a href="about.html"  style="padding:0px !important;"><img src="/resources/front_end/images/eng.png" alt="english" /></a></li>
-                <li><a href="about.html" style="padding:0px !important;" ><img src="/resources/front_end/images/nep.png" alt="nepali" /></a></li>
+                	 <li><a href="?lang=en"  style="padding:0px !important;"><img src="/resources/front_end/images/eng.png" alt="english" /></a></li>
+                <li><a href="?lang=ne" style="padding:0px !important;" ><img src="/resources/front_end/images/nep.png" alt="nepali" /></a></li>
                     <li><a href="contact.html" class="nav_btn">Contact</a></li>
                     <li><a href="#" class="nav_btn">Notification <i class="fa fa-bell"></i></a></li>
                    <li class="dropdown"><a class="dropdown-toggle nav_btn" data-toggle="dropdown" href="#">Account

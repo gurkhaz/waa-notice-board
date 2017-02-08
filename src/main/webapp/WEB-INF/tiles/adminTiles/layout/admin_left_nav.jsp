@@ -28,14 +28,14 @@
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Product</span>
+            <i class="fa fa-dashboard"></i> <span>User</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="product"><i class="fa fa-circle-o text-aqua"></i> Add Product</a></li>
-            <li><a href="productlist"><i class="fa fa-circle-o text-aqua"></i> List Product</a></li>
+            <li class="active"><a href="product"><i class="fa fa-circle-o text-aqua"></i> Add User</a></li>
+            <li><a href="productlist"><i class="fa fa-circle-o text-aqua"></i> List User</a></li>
           </ul>
           
         </li>
@@ -49,6 +49,20 @@
           <ul class="treeview-menu">
             <li class="active"><a href="addNotification"><i class="fa fa-circle-o text-aqua"></i> Add Notification</a></li>
             <li><a href="listNotification"><i class="fa fa-circle-o text-aqua"></i> List Notification</a></li>
+          </ul>
+          
+        </li>
+        
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Student</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="addNotification"><i class="fa fa-circle-o text-aqua"></i> Add Student</a></li>
+           <!--  <li><a href="listNotification"><i class="fa fa-circle-o text-aqua"></i> List Notification</a></li> -->
           </ul>
           
         </li>

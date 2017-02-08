@@ -53,7 +53,7 @@ public class NoticeControllerView {
 	public String deleteNotification(@PathVariable int id,Model model){
 		
 		noticeService.deleteNotice(id);
-		return "listNotification";
+		return "redirect:/listNotification";
 		
 	}
 	
