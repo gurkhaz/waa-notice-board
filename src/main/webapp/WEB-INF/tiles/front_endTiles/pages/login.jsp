@@ -1,11 +1,10 @@
+  <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %> 
   <section class="banner">
     	<div class="container">           
             
             <div class="top_form">
-                <h1>Login</h1>
+                <h1><spring:message code='login.form.title'/></h1>
                 <form method="" action="">
-                   
-                    
                     <input type="text" placeholder="Username" required>
                     <input type="password" placeholder="Password" required>
                   
@@ -14,8 +13,5 @@
                     
                 </form>
     		</div>
-            
-          
-            
         </div><!-- container end -->
     </section><!-- banner end -->
