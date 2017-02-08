@@ -40,4 +40,11 @@
 		<put-attribute name="content" value="/WEB-INF/tiles/adminTiles/pages/editNotification.jsp"></put-attribute>
 	</definition>
 	
+	
+	<!-- list student -->
+	
+	<definition name="listStudent" extends="adminmaster">
+		<put-attribute name="content" value="/WEB-INF/tiles/adminTiles/pages/listStudent.jsp"></put-attribute>
+	</definition>
+	
 </tiles-definitions>

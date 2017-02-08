@@ -22,21 +22,21 @@
                    
                     
                      <div class="small_input left">
-                    <select path="faculty">
-                      <option value="">Faculty</option>
-                      <option value="Compro">Compro</option>
-                      <option value="MBA">MBA</option>
-                      
-                    </select>
+                                      
+                     <form:select path="faculty" >
+								<form:option value="" label="Select Faculty" />
+								<form:option value="Compro" label="Compro" />
+								<form:option value="MBA" label="MBA" />
+							</form:select>
                      </div>
                     <div class="small_input right">
-                    <select path="entry">
-                      <option value="">Entry</option>
-                      <option value="January">January</option>
-                      <option value="April">April</option>
-                      <option value="August">August</option>
-                      <option value="October">October</option>
-                    </select>
+                   <form:select path="entry" >
+                      <form:option value="" label="Select Entry"/>
+                      <form:option value="January" label="January"/>
+                      <form:option value="April" label="April"/>
+                      <form:option value="August" label="August"/>
+                      <form:option value="October" label="October"/>
+                   </form:select>
                     </div> <br class="clear">
                     <input type="submit" value="Sign Up">
                     

@@ -26,7 +26,7 @@
 						<!-- Hello <b><c:out value="${user.firstName}" /></b>  -->
 					</h1>
 					<div class="col-md-6">
-						<form:form action="editNotification" modelAttribute="notice"  method="POST"> 
+						<form:form action="/notice/edit/${notice.id}" modelAttribute="notice"  method="POST"> 
 						<div class="form-group">
 								<label for="exampleInputEmail1">Title</label>
 								<form:input path="title"  cssClass="form-control" />

@@ -70,9 +70,9 @@ public class NoticeControllerView {
 	@RequestMapping(value="/notice/edit/{id}", method=RequestMethod.POST)
 	public String editNotification(@ModelAttribute("notice")  Notice notice, @PathVariable int id,Model model){
 		
+		noticeService.updateNotice(notice);
 		
-		
-		return "editNotification";
+		return "redirect:/listNotification";
 		
 	}
 

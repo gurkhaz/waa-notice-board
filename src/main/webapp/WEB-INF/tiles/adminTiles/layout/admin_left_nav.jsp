@@ -61,7 +61,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="addNotification"><i class="fa fa-circle-o text-aqua"></i> Add Student</a></li>
+            <li class="active"><a href="listStudent"><i class="fa fa-circle-o text-aqua"></i> List Student</a></li>
            <!--  <li><a href="listNotification"><i class="fa fa-circle-o text-aqua"></i> List Notification</a></li> -->
           </ul>
           
