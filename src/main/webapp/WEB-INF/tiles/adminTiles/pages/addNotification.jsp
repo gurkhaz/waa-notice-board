@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!-- Content Header (Page header) -->
 <section class="content-header">
 	<h1>
@@ -28,26 +29,26 @@
 					<div class="col-md-6">
 						<form:form action="addNotification" modelAttribute="notice"  method="POST"> 
 						<div class="form-group">
-								<label for="exampleInputEmail1">Title</label>
+								<label for="exampleInputEmail1"><spring:message code='notification.form.title'/></label>
 								<form:input path="title" cssClass="form-control" />
 								<%-- <form:errors path="firstName"></form:errors> --%>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputEmail1">Event Date</label>
+								<label for="exampleInputEmail1"><spring:message code='notification.form.eventDate'/></label>
 								<form:input path="eventDate" type="text" cssClass="form-control" />
 							</div>
 							<div class="form-group">
-								<label for="exampleInputEmail1">Add date</label>
+								<label for="exampleInputEmail1"><spring:message code='notification.form.addDate'/></label>
 								<form:input path="addDate" type="text" cssClass="form-control"  />
 							</div>
 							
 							<div class="form-group">
-								<label for="exampleInputEmail1">Venue</label>
+								<label for="exampleInputEmail1"><spring:message code='notification.form.venue'/></label>
 								<form:input path="venue" type="text" cssClass="form-control"  />
 							</div>
 						
 						 <div class="form-group">
-								<label for="exampleInputEmail1">Faculty</label>
+								<label for="exampleInputEmail1"><spring:message code='notification.form.faculty'/></label>
 								  <form:select path="faculty" cssClass="form-control">
 								<form:option value="" label="Select Faculty" />
 								<form:option value="Compro" label="Compro" />
@@ -56,7 +57,7 @@
 							</div> 
 							
 							<div class="form-group">
-								<label for="exampleInputEmail1">Description</label>
+								<label for="exampleInputEmail1"><spring:message code='notification.form.description'/></label>
 								<form:textarea path="description" rows="5" cols="30" cssClass="form-control"  />
 							</div>
 							<div class="form-group">

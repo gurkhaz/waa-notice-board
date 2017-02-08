@@ -37,8 +37,6 @@ public class UserController {
 	
 	@RequestMapping(value="/addUser", method= RequestMethod.POST)
 	public String addUser(@RequestBody User user){
-		
-	
 		userService.addUser(user);
 		return "ddfdfdf";
 		
@@ -55,7 +53,7 @@ public class UserController {
 	
 	
 	@RequestMapping(value="/user/{id}", method= RequestMethod.DELETE)
-	public void deleteUser(@RequestBody User user, @PathVariable String id){
+	public void deleteUser(@RequestBody User user, @PathVariable Integer id){
 		
 		userService.deleteUser(id);
 		

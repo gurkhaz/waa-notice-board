@@ -25,7 +25,7 @@ public class UserService {
 	
 	
 	
-	public User getUser(String id){
+	public User getUser(Integer id){
 		
 		return userRepository.findOne(id);
 		
@@ -46,7 +46,7 @@ public class UserService {
 	
 	
 	
-	public void deleteUser(String id){
+	public void deleteUser(Integer id){
 		
 		userRepository.delete(id);
 	}

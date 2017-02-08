@@ -1,13 +1,24 @@
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
+  <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %> 
+
+<spring:message code="user.firstName" var="firstname"/>
+<spring:message code="user.lastName" var="lastname"/>
+<spring:message code="user.email" var="email"/>
+<spring:message code="user.userName" var="username"/>
+<spring:message code="user.password" var="password"/>
+<spring:message code="user.address" var="address"/>
+<spring:message code="user.faculty" var="faculty"/>
+
  <section class="banner">
     	<div class="container">           
             
             <div class="top_form  pull-left">
-                <h1>Sign Up</h1>
+                <h1><spring:message code='signUp.signUp'/></h1>
                <form:form modelAttribute="student" method="post" action="signup">
                     <div class="small_input left">
                        
-                        <form:input path="firstName"  type="text" placeholder="First name" />
+                        <form:input path="firstName"  type="text" placeholder="${firstname}" />
                     </div>
                     <div class="small_input right">
                        

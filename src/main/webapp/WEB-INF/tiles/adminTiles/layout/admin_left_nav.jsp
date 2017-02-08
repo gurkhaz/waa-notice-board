@@ -34,8 +34,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="product"><i class="fa fa-circle-o text-aqua"></i> Add User</a></li>
-            <li><a href="productlist"><i class="fa fa-circle-o text-aqua"></i> List User</a></li>
+            <li class="active"><a href="createUser"><i class="fa fa-circle-o text-aqua"></i> Add User</a></li>
+            <li><a href="listAllUsers"><i class="fa fa-circle-o text-aqua"></i> List User</a></li>
           </ul>
           
         </li>

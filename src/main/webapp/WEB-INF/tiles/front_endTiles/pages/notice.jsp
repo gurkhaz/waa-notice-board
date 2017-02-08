@@ -11,13 +11,13 @@
         <table id="example" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                 <thead>
                     <tr>
-                        <th>Title</th>
-                       <th>Event Date</th> 
-					    <th>Venue</th>
-					    <th>Faculty</th>
+                        <th><spring:message code='notification.form.title'/></th>
+                       <th><spring:message code='notification.form.eventDate'/></th> 
+					    <th><spring:message code='notification.form.venue'/></th>
+					    <th><spring:message code='notification.form.faculty'/></th>
                        
-                        <th>Description</th>
-                         <th>Published Date</th>
+                        <th><spring:message code='notification.form.description'/></th>
+                         <th><spring:message code='notification.form.publishedDate'/></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,7 +39,6 @@
 			
 		</div>
 		</div>
-
 </div>
 
     </section><!-- banner end -->

@@ -1,8 +1,8 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<!-- Content Header (Page header) -->
+
 <section class="content-header">
 	<h1>
-		Product <small>Control panel</small>
+		User <small>Control panel</small>
 	</h1>
 	<ol class="breadcrumb">
 		<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -21,12 +21,12 @@
 				<div class="box-header">
 					<i class="ion ion-clipboard"></i>
 
-					<h3 class="box-title">Add Product</h3>
+					<h3 class="box-title">Edit User</h3>
 					<h1>
 						<!-- Hello <b><c:out value="${user.firstName}" /></b>  -->
 					</h1>
 					<div class="col-md-6">
-						<form:form action="createUser" method="POST" modelAttribute="user"> 
+						<form:form action="/user/edit/${user.id}" method="POST" modelAttribute="user"> 
 						<div class="form-group">
 								<label for="exampleInputEmail1">First Name</label>
 								<form:input path="firstName" cssClass="form-control" />

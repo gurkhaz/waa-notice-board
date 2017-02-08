@@ -1,6 +1,8 @@
 package mum.waa.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -9,7 +11,8 @@ import javax.persistence.Table;
 public class User {
 
 	@Id
-	private String id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
 	private String firstName;
 	private String lastName;
 	private String address;
@@ -21,7 +24,7 @@ public class User {
 
 	}
 
-	public User(String id, String firstName, String lastName, String address, String username, String password,
+	public User(int id, String firstName, String lastName, String address, String username, String password,
 			String role) {
 
 		this.id = id;
@@ -34,11 +37,11 @@ public class User {
 
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

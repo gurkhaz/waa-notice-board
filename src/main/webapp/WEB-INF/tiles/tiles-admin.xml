@@ -47,4 +47,18 @@
 		<put-attribute name="content" value="/WEB-INF/tiles/adminTiles/pages/listStudent.jsp"></put-attribute>
 	</definition>
 	
+	
+	<!-- list users -->
+	<definition name="listAllUsers" extends="adminmaster">
+		<put-attribute name="content" value="/WEB-INF/tiles/adminTiles/pages/listAllUsers.jsp"></put-attribute>
+	</definition>
+	
+	<!-- create user -->
+	<definition name="createUser" extends="adminmaster">
+		<put-attribute name="content" value="/WEB-INF/tiles/adminTiles/pages/create_user.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="editUser" extends="adminmaster">
+		<put-attribute name="content" value="/WEB-INF/tiles/adminTiles/pages/editUser.jsp"></put-attribute>
+	</definition>
 </tiles-definitions>
