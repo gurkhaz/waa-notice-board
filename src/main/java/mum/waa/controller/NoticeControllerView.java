@@ -54,6 +54,7 @@ public class NoticeControllerView {
 		
 		noticeService.deleteNotice(id);
 		return "listNotification";
+		
 	}
 	
 
