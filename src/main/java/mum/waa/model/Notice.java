@@ -3,13 +3,16 @@ package mum.waa.model;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Notice {
 
 	@Id 
-	private String id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
 	private String title;
 	private String description;
 	private Date eventDate; 
@@ -23,7 +26,7 @@ public class Notice {
 		
 	}
 	
-	public Notice(String id,String title,String description,Date eventDate,Date addDate,String venue,String faculty,boolean focused){
+	public Notice(int id,String title,String description,Date eventDate,Date addDate,String venue,String faculty,boolean focused){
 		this.id = id;
 		this.title = title;
 		this.description = description;
@@ -34,10 +37,10 @@ public class Notice {
 		this.focused = focused;
 	}
 	
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	

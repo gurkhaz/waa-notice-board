@@ -15,4 +15,14 @@
 	<definition name="adduserform" extends="adminmaster">
 		<put-attribute name="content" value="/WEB-INF/tiles/adminTiles/pages/create_user.jsp"></put-attribute>
 	</definition>
+	
+	
+	<!-- add notification -->
+	
+			
+	<!-- Pages -->	
+	<definition name="addNotification" extends="adminmaster">
+		<put-attribute name="content" value="/WEB-INF/tiles/adminTiles/pages/addNotification.jsp"></put-attribute>
+	</definition>
+	
 </tiles-definitions>

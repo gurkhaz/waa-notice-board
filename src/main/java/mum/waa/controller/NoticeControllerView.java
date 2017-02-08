@@ -14,5 +14,13 @@ public class NoticeControllerView {
 		
 		return "notice";
 	}
+	
+	
+	@RequestMapping(value="/addNotification", method=RequestMethod.GET)
+	public String addNotification(Notice notice){
+		
+		return "addNotification";
+	}
+
 
 }
