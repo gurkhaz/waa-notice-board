@@ -19,12 +19,12 @@ table, th, td {
 
 <script>
     function deleteProduct(event){
-        var product_id = $(event).val();
+        var id = $(event).val();
         var token = $("meta[name='_csrf']").attr("content");
         var header = $("meta[name='_csrf_header']").attr("content");
    
     	$.ajax({
-	    		url: "delete_product_r/"+product_id,
+	    		url: "delete_product_r/"+id,
 	    		beforeSend: function(xhr){xhr.setRequestHeader(header, token);},
 	    		type:"DELETE", 
 	    		error: function(response) {
@@ -77,19 +77,21 @@ table, th, td {
 						    <th>Event Date</th> 
 						    <th>Venue</th>
 						    <th>Faculty</th>
+						     <th>Action</th>
 						</tr>
 					</thead>
 					<tbody>
-						 <c:forEach items="${Notification}" var="product">
+						 <c:forEach items="${Notification}" var="notice">
 					            <tr>
-					            	<td><c:out value="${product.title}"/></td>
-					            	<td><c:out value="${product.eventDate}"/></td>
-					            	<td><c:out value="${product.venue}"/></td>
-					            	<td><c:out value="${product.faculty}"/></td>
+					            	<td><c:out value="${notice.title}"/></td>
+					            	<td><c:out value="${notice.eventDate}"/></td>
+					            	<td><c:out value="${notice.venue}"/></td>
+					            	<td><c:out value="${notice.faculty}"/></td>
 					            	<td>
-					            		<button value="${product.id}" onclick="deleteProduct(this)" class="btn btn-danger btn-xs">Delete</button>
+					            		<%-- <button value="${notice.id}" onclick="deleteProduct(this)" class="btn btn-danger btn-xs">Delete</button> --%>
+					            		<a class="btn btn-warning btn-xs" href="deleteNotice/${notice.id}">Delete</a>
 					            		|
-					            		<a class="btn btn-warning btn-xs" href="product/edit/${product.id}">Edit</a>
+					            		<a class="btn btn-warning btn-xs" href="notificat/edit/${notice.id}">Edit</a>
 					            	</td>
 					            </tr>
 					     </c:forEach> 

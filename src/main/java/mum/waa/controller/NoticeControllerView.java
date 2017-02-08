@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -19,8 +20,9 @@ public class NoticeControllerView {
 	NoticeService noticeService;
 	
 	@RequestMapping(value="/notice", method=RequestMethod.GET)
-	public String notice(Notice notice){
+	public String notice(Notice notice,Model model){
 		
+		model.addAttribute("Notice", noticeService.getAllNotices());
 		return "notice";
 	}
 	
@@ -43,6 +45,14 @@ public class NoticeControllerView {
 	public String getListNotificationForm(Model model){
 		
 		model.addAttribute("Notification", noticeService.getAllNotices());
+		return "listNotification";
+	}
+	
+	
+	@RequestMapping(value="/deleteNotice/{id}", method=RequestMethod.GET)
+	public String deleteNotification(@PathVariable int id,Model model){
+		
+		noticeService.deleteNotice(id);
 		return "listNotification";
 	}
 	

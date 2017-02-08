@@ -22,7 +22,7 @@ public class StudentService {
 		return students;
 	}
 
-	public Student getStudent(String id) {
+	public Student getStudent(Integer id) {
 
 		return studentRepository.findOne(id);
 
@@ -38,7 +38,7 @@ public class StudentService {
 		studentRepository.save(student);
 	}
 
-	public void deleteStudent(String id) {
+	public void deleteStudent(Integer id) {
 
 		studentRepository.delete(id);
 	}

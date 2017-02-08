@@ -35,7 +35,7 @@ public class NoticeController {
 	
 	
 	@RequestMapping(value="/notice/{id}", method= RequestMethod.PUT)
-	public void updateNotice(@RequestBody Notice notice, @PathVariable String id){
+	public void updateNotice(@RequestBody Notice notice, @PathVariable Integer id){
 		
 		noticeService.updateNotice(notice);
 		
@@ -43,7 +43,7 @@ public class NoticeController {
 	
 	
 	@RequestMapping(value="/notice/{id}", method= RequestMethod.DELETE)
-	public void deleteNotice(@RequestBody Notice notice, @PathVariable String id){
+	public void deleteNotice(@RequestBody Notice notice, @PathVariable Integer id){
 		
 		noticeService.deleteNotice(id);
 		

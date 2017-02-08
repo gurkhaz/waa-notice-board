@@ -22,7 +22,7 @@ public class NoticeService {
 		return notices;
 	}
 
-	public Notice getNotice(String id) {
+	public Notice getNotice(Integer id) {
 
 		return noticeRepository.findOne(id);
 
@@ -38,7 +38,7 @@ public class NoticeService {
 		noticeRepository.save(notice);
 	}
 
-	public void deleteNotice(String id) {
+	public void deleteNotice(int id) {
 
 		noticeRepository.delete(id);
 	}

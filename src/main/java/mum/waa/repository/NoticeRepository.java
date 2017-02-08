@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import mum.waa.model.*;
 
-public interface NoticeRepository extends CrudRepository<Notice,String>{
+public interface NoticeRepository extends CrudRepository<Notice,Integer>{
 
 }
