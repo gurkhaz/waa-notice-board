@@ -37,6 +37,20 @@
             <li class="active"><a href="product"><i class="fa fa-circle-o text-aqua"></i> Add Product</a></li>
             <li><a href="productlist"><i class="fa fa-circle-o text-aqua"></i> List Product</a></li>
           </ul>
+          
+        </li>
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Notification</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="addNotification"><i class="fa fa-circle-o text-aqua"></i> Add Notification</a></li>
+            <li><a href="productlist"><i class="fa fa-circle-o text-aqua"></i> List Notification</a></li>
+          </ul>
+          
         </li>
       </ul>
     </section>
