@@ -18,7 +18,7 @@
                <form:form modelAttribute="student" method="post" action="signup">
                     <div class="small_input left">
                        
-                        <form:input path="firstName"  type="text" placeholder="${firstname}" />
+                        <form:input path="firstName"  type="text" placeholder="First Name" />
                         <form:errors path="firstName" cssStyle="color: red" />
                     </div>
                     <div class="small_input right">
@@ -54,7 +54,7 @@
                       <form:option value="October" label="October"/>
                    </form:select>
                     </div> <br class="clear">
-                    <input type="submit" value="Sign Up">
+                    <input type="submit" value="<spring:message code='signUp.signUp'/>">
                     
                 </form:form>
     		</div>

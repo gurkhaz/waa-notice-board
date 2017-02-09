@@ -29,7 +29,7 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="/resources/admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
@@ -42,7 +42,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="/resources/admin/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         AdminLTE Design Team

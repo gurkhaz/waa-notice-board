@@ -8,7 +8,7 @@
           <img src="/resources/admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>Sanjaya shrestha</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -41,14 +41,14 @@
         </li>
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Notification</span>
+            <i class="fa fa-dashboard"></i> <span>Notice</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="addNotification"><i class="fa fa-circle-o text-aqua"></i> Add Notification</a></li>
-            <li><a href="listNotification"><i class="fa fa-circle-o text-aqua"></i> List Notification</a></li>
+            <li class="active"><a href="addNotification"><i class="fa fa-circle-o text-aqua"></i> Add Notice</a></li>
+            <li><a href="listNotification"><i class="fa fa-circle-o text-aqua"></i> List Notice</a></li>
           </ul>
           
         </li>

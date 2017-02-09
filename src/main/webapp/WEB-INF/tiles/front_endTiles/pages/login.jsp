@@ -9,7 +9,7 @@
                     <input type="password" placeholder="Password" required>
                   
                     <input type="checkbox" placeholder="" >Remember me
-                    <input type="submit" value="Login">
+                    <input type="submit" value="<spring:message code='login.form.title'/>">
                     
                 </form>
     		</div>
