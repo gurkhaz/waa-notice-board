@@ -19,16 +19,21 @@
                     <div class="small_input left">
                        
                         <form:input path="firstName"  type="text" placeholder="${firstname}" />
+                        <form:errors path="firstName" cssStyle="color: red" />
                     </div>
                     <div class="small_input right">
                        
                         <form:input path="lastName"  type="text" placeholder="Last name" />
+                        <form:errors path="lastName" cssStyle="color: red" />
                     </div>
                     <br class="clear">
                   
                       <form:input path="email"  type="email" placeholder="Email" />
+                        <form:errors path="email" cssStyle="color: red" />
                       <form:input path="username"  type="text" placeholder="Username" />
+                        <form:errors path="username" cssStyle="color: red" />
                       <form:input path="password"  type="password" placeholder="Password" />
+                        <form:errors path="password" cssStyle="color: red" />
                    <form:input path="address"  type="text" placeholder="Address" />
                    
                     

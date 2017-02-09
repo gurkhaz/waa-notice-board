@@ -1,10 +1,12 @@
 package mum.waa.model;
 
-import javax.annotation.Generated;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Student {
@@ -16,7 +18,11 @@ public class Student {
 	private String lastName;
 	private String address;
 	private String faculty;
+	@NotNull
+	@Size(min = 6, max = 14, message="length must be greather than 6 character")
 	private String username;
+	@NotNull
+	@Size(min = 6, max = 14, message="length must be greather than 6 character")
 	private String password;
 	private String email;
 	private String entry;
