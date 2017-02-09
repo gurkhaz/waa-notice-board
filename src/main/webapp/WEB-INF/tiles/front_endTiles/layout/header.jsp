@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="signup">
                 <img src="/resources/front_end/images/logo.png" alt="logo" max-height="70" max-width="255" style="    margin-top: 7px;" />
                 <!-- <span>slogan is here</span> -->
                 </a>
